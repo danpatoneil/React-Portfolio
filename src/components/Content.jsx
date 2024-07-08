@@ -1,16 +1,18 @@
 import NavigationTabs from "./NavigationTabs";
 import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
-import Resume from "./pages/Portfolio";
+import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import { useState } from "react";
 
 export default function Content() {
-  const [currentPage, setCurrentPage] = useState("AboutMe");
+
+  const pages = ['About Me', 'Portfolio', 'Resume', 'Contact', ]
+  const [currentPage, setCurrentPage] = useState("About Me");
 
   const renderPage = () => {
     switch (currentPage) {
-      case "AboutMe":
+      case "About Me":
         return <AboutMe />;
         break;
 
@@ -28,13 +30,16 @@ export default function Content() {
     }
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+}
 
   return (
     <div>
       <NavigationTabs
         currentPage={currentPage}
         handlePageChange={handlePageChange}
+        pageList={pages}
       />
       {renderPage()}
     </div>

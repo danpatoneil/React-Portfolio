@@ -7,6 +7,18 @@ export default {
         display: ['Monserrat', 'sans-serif']
     },
     textColor:{
+        emerald: {
+          DEFAULT: "#00bb76",
+          100: "#002618",
+          200: "#004b30",
+          300: "#007148",
+          400: "#009760",
+          500: "#00bb76",
+          600: "#00fda0",
+          700: "#3effb8",
+          800: "#7effd0",
+          900: "#bfffe7",
+        },
         isabelline: {
           DEFAULT: "#ede6e3",
           100: "#392a24",

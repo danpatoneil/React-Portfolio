@@ -41,18 +41,18 @@ export default function Contact() {
   return (
     <div className="bg-isabelline-500 p-6">
       <form className="w-full max-w-lg" onSubmit={handleFormSubmit} noValidate>
-        <h1 className="pb-5">Contact Me</h1>
+        <h1 className="pb-5 font-display">Contact Me</h1>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-email"
+              className="block uppercase tracking-wide text-black_olive-500 text-xs font-bold mb-2"
+              htmlFor="grid-email"
             >
               email
             </label>
             <input
             name='email'
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              className="appearance-none block w-full bg-spanish_orange-900 black_olive-500 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-email"
               type="email"
               placeholder="johndoe@example.com"
@@ -61,14 +61,14 @@ export default function Contact() {
           </div>
           <div className="w-full md:w-1/2 px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-name"
+              className="block uppercase tracking-wide text-black_olive-500 text-xs font-bold mb-2"
+              htmlFor="grid-name"
             >
               Name
             </label>
             <input
             name='name'
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-spanish_orange-900 text-black_olive-500 border border-black_olive-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-name"
               type="text"
               placeholder="John Doe"
@@ -79,14 +79,14 @@ export default function Contact() {
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-message"
+              className="block uppercase tracking-wide text-black_olive-500 text-xs font-bold mb-2"
+              htmlFor="grid-message"
             >
               Message
             </label>
             <input
             name='message'
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-spanish_orange-900 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-message"
               type="text"
               placeholder="What can I help you with?"
@@ -95,7 +95,7 @@ export default function Contact() {
           </div>
 
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="bg-emerald-400 text-isabelline-500 border-2 border-black_olive-500">Submit</button>
       </form>
           {errorMessage && (
             <div>
