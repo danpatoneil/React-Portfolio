@@ -26,9 +26,6 @@ export default function Content() {
         return <Portfolio />;
         break;
     }
-    // if (currentPage == "AboutMe") {
-    //   return <AboutMe />;
-    // }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -39,7 +36,6 @@ export default function Content() {
       <NavigationTabs
         currentPage={currentPage}
         handlePageChange={handlePageChange}
-        className = 'bg-vivid_sky_blue'
       />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}

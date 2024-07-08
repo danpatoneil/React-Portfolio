@@ -1,8 +1,8 @@
 export default function Resume() {
     return (
-        <div>
+        <div className='bg-isabelline-500'>
             <p>
-                portfolio placeholder
+                resume placeholder
             </p>
         </div>
     )

@@ -1,6 +1,6 @@
-export default function Footer() {
+export default function Portfolio() {
     return (
-        <div>
+        <div className='bg-isabelline-500'>
             <p>
                 portfolio placeholder
             </p>

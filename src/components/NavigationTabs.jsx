@@ -1,10 +1,10 @@
 export default function NavigationTabs({ currentPage, handlePageChange }) {
   return (
-    <nav className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <nav className="bg-emerald-300">
+      <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="">
               <div className="flex space-x-4">
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <a
@@ -12,7 +12,7 @@ export default function NavigationTabs({ currentPage, handlePageChange }) {
                   onClick={() => handlePageChange("AboutMe")}
                   // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                   className={
-                    currentPage === "AboutMe" ? "bg-spanish_orange" : "bg-vivid_sky_blue"
+                    currentPage === "AboutMe" ? "bg-spanish_orange-700 px-2 border-solid border-2 border-black_olive-400 text-black_olive-500" : "text-isabelline-600"
                   }
                 >
                   About Me
@@ -23,7 +23,7 @@ export default function NavigationTabs({ currentPage, handlePageChange }) {
                   // This is a conditional (ternary) operator that checks to see if the current page is "Home"
                   // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
                   className={
-                    currentPage === "Portfolio" ? "bg-spanish_orange" : "bg-vivid_sky_blue"
+                    currentPage === "Portfolio" ? "bg-spanish_orange-700 px-2 border-solid border-2 border-black_olive-400 text-black_olive-500" : "text-isabelline-600"
                   }
                 >
                   Portfolio
@@ -33,7 +33,7 @@ export default function NavigationTabs({ currentPage, handlePageChange }) {
                   onClick={() => handlePageChange("Resume")}
                   // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                   className={
-                    currentPage === "Resume" ? "bg-spanish_orange" : "bg-vivid_sky_blue"
+                    currentPage === "Resume" ? "bg-spanish_orange-700 px-2 border-solid border-2 border-black_olive-400 text-black_olive-500" : "text-isabelline-600"
                   }
                 >
                   Resume
@@ -43,7 +43,7 @@ export default function NavigationTabs({ currentPage, handlePageChange }) {
                   onClick={() => handlePageChange("Contact")}
                   // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                   className={
-                    currentPage === "Contact" ? "bg-spanish_orange" : "bg-vivid_sky_blue"
+                    currentPage === "Contact" ? "bg-spanish_orange-700 px-2 border-solid border-2 border-black_olive-400 text-black_olive-500" : "text-isabelline-600"
                   }
                 >
                   Contact

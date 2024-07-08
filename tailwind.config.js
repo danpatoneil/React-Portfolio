@@ -3,6 +3,48 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
+    fontFamily: {
+        display: ['Monserrat', 'sans-serif']
+    },
+    textColor:{
+        isabelline: {
+          DEFAULT: "#ede6e3",
+          100: "#392a24",
+          200: "#715548",
+          300: "#a58172",
+          400: "#c9b4aa",
+          500: "#ede6e3",
+          600: "#f1ebe9",
+          700: "#f4f0ee",
+          800: "#f8f5f4",
+          900: "#fbfaf9",
+        },
+        black_olive: {
+          DEFAULT: "#36382e",
+          100: "#0b0b09",
+          200: "#161612",
+          300: "#20221c",
+          400: "#2b2d25",
+          500: "#36382e",
+          600: "#616553",
+          700: "#8c9178",
+          800: "#b2b6a5",
+          900: "#d9dad2",
+        },
+        vivid_sky_blue: {
+          DEFAULT: "#5bc3eb",
+          100: "#072c3a",
+          200: "#0e5774",
+          300: "#1683ae",
+          400: "#21ade4",
+          500: "#5bc3eb",
+          600: "#7cceef",
+          700: "#9ddbf3",
+          800: "#bee7f7",
+          900: "#def3fb",
+        },
+      },
+
     colors: {
       emerald: {
         DEFAULT: "#00bb76",
