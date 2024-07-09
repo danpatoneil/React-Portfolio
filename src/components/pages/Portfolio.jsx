@@ -1,34 +1,41 @@
+import textEditorImage from '../../assets/TextEditor.png'
+import backEndImage from '../../assets/backEnd.png'
+import gamingDatabaseImage from '../../assets/GamersGala.png'
+import SVGLogoGeneratorImage from '../../assets/SVGGenerator.png'
+import noteTakerImage from '../../assets/noteTaker.png'
+import readmeGeneratorImage from '../../assets/ReadmeGenerator.png'
+
 export default function Portfolio() {
   const projectArray = [
     {
       name: "Text Editor",
       link: "https://github.com/danpatoneil/Text-Editor",
-      imageSrc: "https://loremflickr.com/320/240",
+      imageSrc: textEditorImage,
     },
     {
       name: "E-Commerce Back End",
       link: "https://github.com/danpatoneil/E-Commerce-Back-End",
-      imageSrc: "https://loremflickr.com/320/240",
+      imageSrc: backEndImage,
     },
     {
       name: "Gaming Database",
       link: "https://github.com/danpatoneil/Gaming-Database",
-      imageSrc: "https://loremflickr.com/320/240",
+      imageSrc: gamingDatabaseImage,
     },
     {
       name: "SVG Logo Generator",
       link: "https://github.com/danpatoneil/SVG-Logo-Generator",
-      imageSrc: "https://loremflickr.com/320/240",
+      imageSrc: SVGLogoGeneratorImage,
     },
     {
       name: "Note Taker",
       link: "https://github.com/danpatoneil/Note-Taker",
-      imageSrc: "https://loremflickr.com/320/240",
+      imageSrc: noteTakerImage,
     },
     {
       name: "Readme Generator",
       link: "https://github.com/danpatoneil/Readme-Generator",
-      imageSrc: "https://loremflickr.com/320/240",
+      imageSrc: readmeGeneratorImage,
     },
   ];
   return (
