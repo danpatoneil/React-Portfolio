@@ -31,7 +31,7 @@ export default function NavigationTabs({ currentPage, handlePageChange, pageList
                 className={
                     currentPage === pageName
                       ? "bg-spanish_orange-700 px-2 border-solid border-2 border-black_olive-400 text-black_olive-500 text-m text-center flex-1"
-                      : "text-isabelline-600 px-2 border-solid border-2 border-emerald-300 text-center hover:bg-vivid_sky_blue-700 hover:px-2 hover:border-solid hover:border-2 hover:border-black_olive-400 text-m flex-1"
+                      : "text-isabelline-600 px-2 border-hidden border-2 text-center hover:bg-vivid_sky_blue-700 hover:px-2 hover:border-solid hover:border-2 hover:border-black_olive-400 text-m flex-1"
                   }
               >
                 {pageName}
